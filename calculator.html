@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Calculator</title>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+  <div class="w-80 bg-white rounded-2xl shadow-xl p-6">
+    <!-- Display -->
+    <input
+      id="display"
+      type="text"
+      readonly
+      class="w-full h-16 text-right text-3xl px-4 rounded-lg border border-gray-300 mb-5 bg-gray-50 outline-none"
+    />
+
+    <div class="grid grid-cols-4 gap-3">
+
+      <!-- First Row -->
+      <button class="btn bg-red-500 text-white">C</button>
+      <button class="btn bg-orange-500 text-white">⌫</button>
+      <button class="btn bg-yellow-500 text-white">%</button>
+      <button class="btn bg-blue-500 text-white">/</button>
+
+      <button class="btn">7</button>
+      <button class="btn">8</button>
+      <button class="btn">9</button>
+      <button class="btn bg-blue-500 text-white">*</button>
+
+      <!-- Third Row -->
+      <button class="btn">4</button>
+      <button class="btn">5</button>
+      <button class="btn">6</button>
+      <button class="btn bg-blue-500 text-white">-</button>
+
+      <!-- Fourth Row -->
+      <button class="btn">1</button>
+      <button class="btn">2</button>
+      <button class="btn">3</button>
+      <button class="btn bg-blue-500 text-white">+</button>
+
+      <!-- Fifth Row -->
+      <button class="btn col-span-2">0</button>
+      <button class="btn">.</button>
+      <button class="btn bg-green-500 text-white">=</button>
+
+    </div>
+  </div>
+
+  <script src="calculator.js"></script>
+  
+</body>
+</html>
