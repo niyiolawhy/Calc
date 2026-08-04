@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>"
+    <title>MY CALCULATOR</title>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+>
+    <div class="w-80 h-[500px] bg-black rounded-2xl shadow-xl p-6">
+    <!-- Display -->
+    <input
+      id="display"
+      type="text"
+      readonly
+      class="w-full h-16 text-right text-3xl px-4 rounded-lg border border-gray-300 mb-5 bg-[#333333] text-white outline-none"
+    />
+
+    <div class="grid grid-cols-4 gap-3">
+
+    <!--First Row-->
+        <button class="btn w-16 h-16 rounded-[50%] bg-[#D3D3D3] text-white">AC</button>
+        <button class="btn w-16 h-16 rounded-[50%] bg-[#D3D3D3] text-white">+/-</button>
+        <button class="btn w-16 h-16 rounded-[50%] bg-[#D3D3D3] text-white">%</button>
+        <button class ="btn w-16 h-16 rounded-[50%] bg-yellow-500 text-white">/</button>
+
+        <!--second Row-->
+        <button class="btn w-16 h-16 rounded-[50%] bg-[#333333] text-white">7</button>
+        <button class="btn w-16 h-16 rounded-[50%] bg-[#333333] text-white">8</button>
+        <button class="btn w-16 h-16 rounded-[50%] bg-[#333333] text-white">9</button>
+        <button class="btn w-16 h-16 rounded-[50%] bg-yellow-500 text-white">*</button>
+    
+
+        <!--Third Row-->
+        <button class="btn w-16 h-16 rounded-[50%] bg-[#333333] text-white">4</button>
+        <button class="btn w-16 h-16 rounded-[50%] bg-[#333333] text-white">5</button>
+        <button class="btn w-16 h-16 rounded-[50%] bg-[#333333] text-white">6</button>
+        <button class="btn w-16 h-16 rounded-[50%] bg-yellow-500 text-white">-</button>
+    
+
+        <!--Fourth Row-->
+        <button class="btn w-16 h-16 rounded-[50%] bg-[#333333] text-white">1</button>
+        <button class="btn w-16 h-16 rounded-[50%] bg-[#333333] text-white">2</button>
+        <button class="btn w-16 h-16 rounded-[50%] bg-[#333333] text-white">3</button>
+        <button class="btn w-16 h-16 rounded-[50%] bg-yellow-500 text-white">+</button>
+        
+
+        <!--Sixth-->
+        <button class="col-span-2 h-16 rounded-full  btn bg-[#333333] text-white">0</button>
+        <button class="btn w-16 h-16 rounded-[50%] bg-[#333333] text-white">.</button>
+        <button class="btn w-16 h-16 rounded-[50%] bg-yellow-500 text-white">=</button>
+
+    </div>
+    </div>
+
+    <script src="cacu.js"></script>
+</body>
+</html>
